@@ -35,7 +35,7 @@ class PRAnalyzerAgent:
         response = self.client.chat.completions.create(
             model="gpt-4o",
             messages=[
-                {"role": "system", "content": "You are an expert code reviewer analyzing pull requests based on coding best practices."},
+                {"role": "system", "content": "You are an expert code reviewer analyzing pull requests based on coding best practices. Code changes are provided in git diff format."},
                 {"role": "user", "content": prompt}
             ],
             temperature=0.7,
