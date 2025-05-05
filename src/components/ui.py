@@ -23,9 +23,9 @@ def render_metrics(pr_data: dict):
 def render_welcome_screen():
     """Render the welcome screen."""
     st.markdown("""
-        <div style="text-align: center; padding: 4rem 0;">
+        <div class="welcome-card">
             <h1>Welcome to PR Analyzer</h1>
-            <p style="font-size: 1.2rem; color: #4a5568;">
+            <p class="welcome-text">
                 Enter a GitHub PR URL to analyze code quality, security, and performance.
             </p>
         </div>

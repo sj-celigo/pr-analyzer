@@ -79,10 +79,10 @@ def format_side_by_side_diff(left_lines: list, right_lines: list) -> str:
 
 def apply_diff_styles(st_instance=None):
     """Apply custom CSS for the diff table."""
-    if st_instance is None:
-        st_instance = st
+    # Use the passed st_instance or fallback to the global st
+    target_st = st_instance if st_instance is not None else st
         
-    st_instance.markdown("""
+    target_st.markdown("""
         <style>
         .diff-container {
             background-color: #f8f9fa;

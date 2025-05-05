@@ -16,6 +16,51 @@ def get_styles():
         border: 1px solid #e9ecef;
     }
     
+    /* Welcome screen styles */
+    .welcome-card {
+        text-align: center; 
+        padding: 4rem 0;
+        background-color: #eef5ff;
+        border-radius: 12px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        margin: 2rem auto;
+        max-width: 800px;
+        border: 1px solid #d2e3fc;
+    }
+    
+    .welcome-text {
+        font-size: 1.2rem; 
+        color: #1a365d;
+        margin: 1rem auto;
+        font-weight: 500;
+    }
+    
+    .welcome-card h1 {
+        color: #0a2540;
+    }
+    
+    /* Analysis card styles */
+    .analysis-card {
+        background-color: white;
+        border-radius: 12px;
+        padding: 1.25rem;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        margin-bottom: 1.5rem;
+        border: 1px solid #e9ecef;
+    }
+    
+    .enhanced-markdown {
+        font-size: 1rem;
+        line-height: 1.6;
+        color: #2d3748;
+    }
+    
+    .review-area {
+        margin-top: 2rem;
+        padding-top: 1.5rem;
+        border-top: 1px solid #e9ecef;
+    }
+    
     /* Header styles */
     .stApp > header {
         background-color: white;

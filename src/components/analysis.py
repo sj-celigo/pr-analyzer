@@ -82,6 +82,7 @@ def render_review_form(analysis_results: dict, pr_url: str):
             else:
                 st.error(result["message"])
     
+    # Close the review-area div
     st.markdown('</div>', unsafe_allow_html=True)
 
 def render_file_changes(pr_data: dict):
